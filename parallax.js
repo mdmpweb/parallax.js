@@ -49,6 +49,7 @@
 
     if (!this.imageSrc && this.$element.is('img')) {
       this.imageSrc = this.$element.attr('src');
+      this.imageSrc = this.$element.attr('alt');
     }
 
     var positions = (this.position + '').toLowerCase().match(/\S+/g) || [];
